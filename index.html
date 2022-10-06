@@ -1,106 +1,153 @@
 <!DOCTYPE html>
 <html lang="en-GB">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="author" content="Konrad Zapert" />
+		<meta
+			name="description"
+			content="This page contains all the things I learn about html."
+		/>
+		<link rel="icon" href="./html5.png" type="image/x-icon" />
+		<title>My HMTL Project</title>
+		<link rel="stylesheet" href="styles.css" type="text/css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="author" content="Konrad Zapert">
-    <meta name="description" content="This page contains all the things I learn about html.">
-    <link rel="icon" href="./html5.png" type="image/x-icon">
-    <title>My HMTL Project</title>
-    <link rel="stylesheet" href="styles.css" type="text/css">
-</head>
+	<body>
+		<header>
+			<h1>My Goals for the Year</h1>
 
-<body>
-    <h1>Hello World</h1>
-    
-    <hr>
+			<nav aria-label="primary-navigation">
+				<ul>
+					<li>
+						<a href="#html">Learning HTML</a>
+					</li>
+					<li>
+						<a href="#vacation">Planning a vacation</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<hr />
+		<main>
+			<article id="html">
+				<h2>I'm ready to learn HTML!</h2>
+				<p>This is my first web page.</p>
+				<!-- In react it is necessary to add "/" at the end of a tag. -->
+				<section>
+					<h3>HTML5</h3>
+					<img
+						src="./img/html_logo_300x300.png"
+						alt="HTML 5 Logo"
+						title="I am learning HTML 5"
+						width="300"
+						height="300"
+					/>
+					<!-- By providing to the site the width and height of an image you can prevent a cumulative layout shift, caused by the browser figuring out the size and then shifting the layout of the page. -->
+					<figure>
+						<figcaption>An example of HTML 5 code</figcaption>
+						<p>
+							<code>&lt;h1&gt;Hello World!&lt;h1&gt;</code>
+						</p>
+					</figure>
+				</section>
+				<section>
+					<h3>My Daily Schedule</h3>
+					<p>Let me tell you how:</p>
+					<ol>
+						<li>...I learn more about web dev.</li>
+						<li>...I plan out my schedule.</li>
+						<li>
+							...I use resources from
+							<abbr title="Mozilla Developer Network">
+								<!-- An instance of an absolute reference -->
+								<a href="https://developer.mozilla.org/">MDN</a> </abbr
+							>.
+						</li>
+					</ol>
+					<aside>
+						<details>
+							<summary>
+								Guess the <mark>number of hours</mark> I code everyday?
+							</summary>
+							<p>
+								I start at <time datetime="08:00">8 am</time> and write code for
+								<time datetime="PT3H">3 hours</time> every morning.
+							</p>
+						</details>
+					</aside>
+				</section>
+			</article>
+			<hr />
+			<article id="vacation">
+				<h2>I Am Also Planning a Vacation</h2>
+				<p>I've been working hard and <em>really need a getaway.</em></p>
+				<p>
+					I live in <abbr title="Poland">PL</abbr> so I want to go to a beach.
+				</p>
+				<section>
+					<h3>Places I'd Like to Visit:</h3>
+					<ul>
+						<li>
+							<p>I've heard good things about the Carribean...</p>
+							<figure>
+								<img
+									src="./img/caribbean.jpg"
+									alt="Caribbean Beach"
+									title="I want to visit Carribean beach."
+									width="400"
+									height="225"
+									loading="lazy"
+								/>
+							</figure>
+							<!-- Setting the lazy attribute allows the image to load only when the user scrolls the page to where the image resides. -->
+							<figcaption>Carribean Beach Getaway</figcaption>
+						</li>
+						<li>
+							<p>I've heard good things about going here:</p>
+							<address>
+								Margaritaville Island Reserve Riviera Cancún<br />
+								Bahia Petempich Puerto Morelos, Mexico<br />
+								Colonia Morelos, México 77580
+							</address>
+							<!-- Figure is not only used for image tags!!! -->
+							<figure>
+								<img
+									src="./img/vacation.jpg"
+									alt="Cancún Vacation"
+									title="It's five o'clock Somewhere!"
+									loading="lazy"
+									width="400"
+									height="267"
+								/>
+							</figure>
+							<figcaption>A Caribbean Vacation image</figcaption>
+						</li>
+					</ul>
+				</section>
+				<!-- TODO: Add more places -->
+				<section>
+					<h3>Places I Want to Avoid:</h3>
+					<dl>
+						<dt>North Pole</dt>
+						<dd>I hear this is <strong>cold</strong>!</dd>
 
-    <nav>
-        <ul>
-            <li>
-                <a href="#html">Learning HTML</a>
-            </li>
-            <li>
-                <a href="#vacation">Planning a vacation</a>
-            </li>
-        </ul>
-    </nav>
-    
-    <hr>
-    <section id="html">
-        <h2>I'm ready to learn HTML!</h2>
-        <p>This is my first web page.</p>
-        <!-- In react it is necessary to add "/" at the end of a tag. -->
-        <img src="./img/html_logo_300x300.png" alt="HTML 5 Logo" title="I am learning HTML 5" width="300" height="300">
-        <!-- By providing to the site the width and height of an image you can prevent a cumulative layout shift, caused by the browser figuring out the size and then shifting the layout of the page. -->
-        <figure>
-            <figcaption>An example of HTML 5 code</figcaption>
-            <p>
-                <code>&lt;h1&gt;Hello World!&lt;h1&gt;</code>
-            </p>
-        </figure>
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how:</p>
-        <ol>
-            <li>...I learn more about web dev.</li>
-            <li>...I plan out my schedule.</li>
-            <li>...I use resources from <abbr title="Mozilla Developer Network">
-                <!-- An instance of an absolute reference -->
-                <a href="https://developer.mozilla.org/">MDN</a>
-            </abbr>.</li>
-        </ol>
-    </section>
-    <hr>
-    <section id="vacation">
-        <h2>I Am Also Planning a Vacation</h2>
-        <p>I've been working hard and <em>really need a getaway.</em></p>
-        <p>I live in <abbr title="Poland">PL</abbr> so I want to go to a beach.</p>
+						<dt>South Pole</dt>
+						<dd>This is also cold.</dd>
 
-        <h3>Places I'd Like to Visit:</h3>
-        <ul>
-            <li>
-                <p>I've heard good things about the Carribean...</p>
-                <figure>
-                    <img src="./img/caribbean.jpg" alt="Caribbean Beach" title="I want to visit Carribean beach." width="400" height="225" loading="lazy">
-                </figure>
-                <!-- Setting the lazy attribute allows the image to load only when the user scrolls the page to where the image resides. -->
-                <figcaption>
-                    Carribean Beach Getaway
-                </figcaption>
-            </li>
-            <li><p>I've heard good things about going here:</p>
-                <address>
-                Margaritaville Island Reserve Riviera Cancún<br>
-                Bahia Petempich Puerto Morelos, Mexico<br>
-                Colonia Morelos, México 77580
-                </address>
-                <!-- Figure is not only used for image tags!!! -->
-                <figure>
-                    <img src="./img/vacation.jpg" alt="Cancún Vacation" title="It's five o'clock Somewhere!" loading="lazy" width="400" height="267">
-                </figure>
-                <figcaption>
-                    A Caribbean Vacation image
-                </figcaption>
-            </li>
-        </ul>
-        <!-- TODO: Add more places -->
-        <h3>Places I Want to Avoid:</h3>
-        <dl>
-            <dt>North Pole</dt>
-            <dd>I hear this is <strong>cold</strong>!</dd>
-
-            <dt>South Pole</dt>
-            <dd>This is also cold.</dd>
-
-            <dt>Mountain Tops</dt>
-            <dd>These are also cold.</dd>
-        </dl>
-    </section>
-    <hr>
-    &lt;&lt;&lt; &copy; <a href="about.html">Konrad Zapert</a> &gt;&gt;&gt;
-    <p>
-        <a href="#">Back to top</a>
-    </p>
-</body>
-
+						<dt>Mountain Tops</dt>
+						<dd>These are also cold.</dd>
+					</dl>
+				</section>
+			</article>
+		</main>
+		<hr />
+		<footer>
+			<p>
+				&lt;&lt;&lt; &copy; <a href="about.html">Konrad Zapert</a> &gt;&gt;&gt;
+			</p>
+			<p>
+				<a href="#">Back to top</a>
+			</p>
+		</footer>
+	</body>
 </html>
