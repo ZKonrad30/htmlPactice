@@ -1,15 +1,14 @@
 <!DOCTYPE html>
 <html lang="en-GB">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="author" content="Konrad Zapert" />
+		<meta charset="UTF-8">
+		<meta name="author" content="Konrad Zapert">
 		<meta
 			name="description"
-			content="This page contains all the things I learn about html."
-		/>
-		<link rel="icon" href="./html5.png" type="image/x-icon" />
+			content="This page contains all the things I learn about html.">
+		<link rel="icon" href="./html5.png" type="image/x-icon">
 		<title>My HMTL Project</title>
-		<link rel="stylesheet" href="styles.css" type="text/css" />
+		<link rel="stylesheet" href="styles.css" type="text/css">
 	</head>
 
 	<body>
@@ -30,7 +29,7 @@
 				</ul>
 			</nav>
 		</header>
-		<hr />
+		<hr>
 		<main>
 			<article id="html">
 				<h2>I'm ready to learn HTML!</h2>
@@ -43,8 +42,7 @@
 						alt="HTML 5 Logo"
 						title="I am learning HTML 5"
 						width="300"
-						height="300"
-					/>
+						height="300">
 					<!-- By providing to the site the width and height of an image you can prevent a cumulative layout shift, caused by the browser figuring out the size and then shifting the layout of the page. -->
 					<figure>
 						<figcaption>An example of HTML 5 code</figcaption>
@@ -78,7 +76,7 @@
 							</p>
 						</details>
 					</aside>
-					<br />
+					<br>
 					<table>
 						<caption>
 							My Daily Schedule
@@ -139,7 +137,7 @@
 					</table>
 				</section>
 			</article>
-			<hr />
+			<hr>
 			<article id="vacation">
 				<h2>I Am Also Planning a Vacation</h2>
 				<p>I've been working hard and <em>really need a getaway.</em></p>
@@ -158,8 +156,7 @@
 									title="I want to visit Carribean beach."
 									width="400"
 									height="225"
-									loading="lazy"
-								/>
+									loading="lazy">
 								<figcaption>Carribean Beach Getaway</figcaption>
 							</figure>
 							<!-- Setting the lazy attribute allows the image to load only when the user scrolls the page to where the image resides. -->
@@ -179,8 +176,7 @@
 									title="It's five o'clock Somewhere!"
 									loading="lazy"
 									width="400"
-									height="267"
-								/>
+									height="267">
 								<figcaption>A Caribbean Vacation image</figcaption>
 							</figure>
 						</li>
@@ -202,7 +198,7 @@
 				</section>
 			</article>
 
-			<hr />
+			<hr>
 
 			<article>
 				<h2>Contact Me</h2>
@@ -228,8 +224,7 @@
 							id="lastName"
 							placeholder="Doe"
 							autocomplete="on"
-							required
-						/>
+							required>
 					</p>
 					<p>
 						<label for="password">Password:</label>
@@ -238,8 +233,7 @@
 							name="password"
 							id="password"
 							placeholder="Your secret"
-							required
-						/>
+							required>
 					</p>
 					<p>
 						<label for="phone">Phone:</label>
@@ -247,10 +241,9 @@
 							type="tel"
 							name="phone"
 							id="phone"
-							placeholder="777-777-777"
+							placeholder="777777777"
 							pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
-							required
-						/>
+							required>
 					</p>
 					<p>
 						<label for="decade">Favorite Decade:</label>
@@ -261,26 +254,42 @@
 							min="1950"
 							max="2022"
 							step="10"
-							value="1980"
-						/>
+							value="1980">
 					</p>
 					<!-- step means the interval inbetween years -->
 					<p>
 						<label for="coffee">Favorite Coffee:</label>
-						<select name="coffee" id="coffee">
-							<option value="regular coffee">Regular Coffee</option>
-							<option value="iced coffee">Iced coffee</option>
-							<option value="latte" selected>Latte</option>
-							<option value="cappuccino">Cappuccino</option>
-							<option value="cortado">Cortado</option>
-							<option value="americano">Americano</option>
+						<select name="coffee" id="coffee" multiple size="5">
+							<optgroup label="Coffees">
+								<option value="regular coffee">Regular Coffee</option>
+								<option value="iced coffee">Iced coffee</option>
+							</optgroup>
+							<optgroup label="Espresso Drinks">
+								<option value="latte" selected>Latte</option>
+								<option value="cappuccino">Cappuccino</option>
+								<option value="cortado">Cortado</option>
+								<option value="americano">Americano</option>
+							</optgroup>
 							<option value="other">Other</option>
 						</select>
 					</p>
+					<!-- <p>
+						<label for="coffee">Favorite Coffee:</label>
+						<input type="text" name="coffee" id="coffee" list="coffee-list">
+						<datalist id="coffee-list">
+							<option value="regular coffee">
+							<option value="iced coffee">
+							<option value="latte" selected>
+							<option value="cappuccino">
+							<option value="cortado">
+							<option value="americano">
+							<option value="other">
+						</datalist>
+					</p> -->
 				</form>
 			</article>
 		</main>
-		<hr />
+		<hr>
 		<footer>
 			<p>
 				&lt;&lt;&lt; &copy; <a href="about.html">Konrad Zapert</a> &gt;&gt;&gt;
