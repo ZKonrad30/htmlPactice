@@ -119,7 +119,7 @@
 							<tr>
 								<th scope="row">Evening</th>
 								<td rowspan="2">All Other Times</td>
-								<td colspan="2">Free Time</td>
+								<td>Free Time</td>
 							</tr>
 							<tr>
 								<th scope="row">Night</th>
@@ -164,8 +164,8 @@
 						<li>
 							<p>I've heard good things about going here:</p>
 							<address>
-								Margaritaville Island Reserve Riviera Cancún<br />
-								Bahia Petempich Puerto Morelos, Mexico<br />
+								Margaritaville Island Reserve Riviera Cancún<br>
+								Bahia Petempich Puerto Morelos, Mexico<br>
 								Colonia Morelos, México 77580
 							</address>
 							<!-- Figure is not only used for image tags!!! -->
@@ -215,8 +215,7 @@
 								placeholder="Kate"
 								autocomplete="on"
 								required
-								autofocus
-							/>
+								autofocus>
 						</p>
 						<p>
 							<label for="lastName">Last Name:</label>
@@ -264,13 +263,13 @@
 							<select name="coffee" id="coffee" multiple 	size="5">
 								<optgroup label="Coffees">
 									<option value="regular coffee">Regular 	Coffee</option>
-									<option value="iced coffee">Iced coffee</	option>
+									<option value="iced coffee">Iced coffee</option>
 								</optgroup>
 								<optgroup label="Espresso Drinks">
-									<option value="latte" selected>Latte</	option>
-									<option value="cappuccino">Cappuccino</	option>
+									<option value="latte" selected>Latte</option>
+									<option value="cappuccino">Cappuccino</option>
 									<option value="cortado">Cortado</option>
-									<option value="americano">Americano</	option>
+									<option value="americano">Americano</option>
 								</optgroup>
 								<option value="other">Other</option>
 							</select>
@@ -312,8 +311,32 @@
 						<legend>Do you have pets?</legend>
 						<p>
 							<input type="checkbox" name="pets" id="dog" value="dog">
+							<label for="dog">Dog</label>
+						</p>
+						<p>
+							<input type="checkbox" name="pets" id="cat" value="cat">
+							<label for="cat">Cat</label>
+						</p>
+						<p>
+							<input type="checkbox" name="pets" id="fish" value="fish">
+							<label for="fish">Fish</label>
+						</p>
+						<p>
+							<input type="checkbox" name="pets" id="otherPet" value="otherPet">
+							<label for="otherPet">Other</label>
 						</p>
 					</fieldset>
+					<br>
+					<fieldset>
+						<legend>Send Me A Note</legend>
+						<label for="message">Your Message:</label>
+						<br>
+						<textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message here"></textarea>
+					</fieldset>
+					<br>
+					<button type="submit">Submit</button>
+					<button type="submit" formaction="https://httpbin.org/post" formmethod="post"></button>
+					<button type="reset">Reset</button>
 				</form>
 			</article>
 		</main>
